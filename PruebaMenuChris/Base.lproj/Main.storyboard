@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Reveal View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="SWRevealViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <segue destination="DQe-fP-4aY" kind="custom" identifier="sw_rear" customClass="SWRevealViewControllerSegueSetController" id="1O9-TV-lat"/>
+                        <segue destination="bHE-z4-gu0" kind="custom" identifier="sw_front" customClass="SWRevealViewControllerSegueSetController" id="X0a-0r-qbR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="532" y="114"/>
+        </scene>
+        <!--Menu View Controller-->
+        <scene sceneID="vTR-up-CXL">
+            <objects>
+                <viewController id="DQe-fP-4aY" customClass="MenuViewController" customModule="PruebaMenuChris" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zsb-Qp-I1H">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WGQ-K4-NdS">
+                                <rect key="frame" x="31" y="65" width="60" height="30"/>
+                                <color key="backgroundColor" red="0.49050871980290789" green="0.45528453870167929" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="WGQ-K4-NdS" secondAttribute="height" multiplier="2:1" id="zhZ-MC-h5U"/>
+                                </constraints>
+                                <color key="tintColor" red="0.99360588180094644" green="1" blue="0.94261869068007054" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Opcion 1"/>
+                                <connections>
+                                    <segue destination="r43-rF-HiF" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="aqA-4G-8h8"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t0F-3j-dub">
+                                <rect key="frame" x="35" y="116" width="39" height="30"/>
+                                <state key="normal" title="home"/>
+                                <connections>
+                                    <segue destination="bHE-z4-gu0" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="1Dd-cQ-01K"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="WGQ-K4-NdS" firstAttribute="leading" secondItem="92E-aA-wBJ" secondAttribute="leading" constant="31" id="BxP-Xt-hsz"/>
+                            <constraint firstItem="t0F-3j-dub" firstAttribute="top" secondItem="WGQ-K4-NdS" secondAttribute="bottom" constant="21" id="IbC-eh-Qpe"/>
+                            <constraint firstItem="t0F-3j-dub" firstAttribute="leading" secondItem="92E-aA-wBJ" secondAttribute="leading" constant="35" id="OHc-FH-76k"/>
+                            <constraint firstItem="WGQ-K4-NdS" firstAttribute="top" secondItem="92E-aA-wBJ" secondAttribute="top" constant="45" id="zKh-LV-wV6"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="92E-aA-wBJ"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rok-NW-0ZG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1422" y="-565"/>
+        </scene>
+        <!--Opcion1 View Controller-->
+        <scene sceneID="dtS-RA-F60">
+            <objects>
+                <viewController storyboardIdentifier="Opcion1ViewController" id="soa-N0-nVD" customClass="Opcion1ViewController" customModule="PruebaMenuChris" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="XIQ-6c-EQR">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WGA-Zt-KOh">
+                                <rect key="frame" x="94" y="308" width="193" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Cambia a pantalla 1"/>
+                                <connections>
+                                    <action selector="Cambiapantalla1:" destination="soa-N0-nVD" eventType="touchUpInside" id="7Pa-MB-xgU"/>
+                                    <action selector="CambioStoryBoard:" destination="nTg-yg-Vi9" eventType="touchUpInside" id="us1-Pb-O1z"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="uda-FP-cKC"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Ela-vp-ig3">
+                        <barButtonItem key="leftBarButtonItem" title="menu" id="3ty-Eg-xiA"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="menuButton" destination="3ty-Eg-xiA" id="GfE-N1-Vwb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Hbz-7E-6CO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2956" y="-595"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="X04-WD-seb">
+            <objects>
+                <viewController storyboardIdentifier="ViewController" id="nTg-yg-Vi9" customClass="ViewController" customModule="PruebaMenuChris" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0Do-tZ-Jlf">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fondo006" translatesAutoresizingMaskIntoConstraints="NO" id="RRL-7H-ist">
+                                <rect key="frame" x="16" y="91" width="343" height="164"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="164" id="zeU-xO-vPz"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="64e-2Y-zMr">
+                                <rect key="frame" x="104" y="437" width="193" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Cambiar a pantalla 2"/>
+                                <connections>
+                                    <action selector="CambioStoryBoard:" destination="nTg-yg-Vi9" eventType="touchUpInside" id="rFA-Tn-nCg"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sZq-So-kc5">
+                                <rect key="frame" x="77" y="536" width="246" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Cambia StoryBoard"/>
+                                <connections>
+                                    <action selector="Secondstoryboard:" destination="nTg-yg-Vi9" eventType="touchUpInside" id="le0-83-mTa"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.43923858040491703" blue="0.26806478326006267" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="HHI-zR-ewb" firstAttribute="trailing" secondItem="RRL-7H-ist" secondAttribute="trailing" constant="16" id="COU-JK-aX6"/>
+                            <constraint firstItem="RRL-7H-ist" firstAttribute="top" secondItem="HHI-zR-ewb" secondAttribute="top" constant="27" id="d7E-wU-qnp"/>
+                            <constraint firstItem="RRL-7H-ist" firstAttribute="leading" secondItem="HHI-zR-ewb" secondAttribute="leading" constant="16" id="xif-8J-0yK"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="HHI-zR-ewb"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Z2I-Z9-fsl">
+                        <barButtonItem key="leftBarButtonItem" title="menu" id="V8K-6R-tQE"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="menuButton" destination="V8K-6R-tQE" id="bEr-wf-Iis"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="S4N-cS-uTi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2181.5999999999999" y="322.48875562218893"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="M5e-bk-Ngg">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="bHE-z4-gu0" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="6S3-Bj-zVO">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="nTg-yg-Vi9" kind="relationship" relationship="rootViewController" id="v12-OB-4iW"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Xf4-bQ-oCZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1422" y="324"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="dPu-IR-pEY">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="r43-rF-HiF" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="jvz-VJ-4xG">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="soa-N0-nVD" kind="relationship" relationship="rootViewController" id="4c3-rO-2na"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="doQ-qj-wee" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2223" y="-595"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="fondo006" width="536" height="720"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="1Dd-cQ-01K"/>
+    </inferredMetricsTieBreakers>
+</document>
